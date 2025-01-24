@@ -1,123 +1,95 @@
-"use client";
-import { motion } from 'framer-motion';
+import React from 'react';
 
-const About = () => {
-    return (
-        <div className="relative overflow-hidden">
-            {/* Background Animation */}
-            <div className="absolute inset-0 z-0  bg-gradient-to-br from-purple-900 via-blue-900 text-white"></div>
-            <div className="flex flex-col lg:flex-row items-center justify-between relative p-10 z-10">
-                <div className="relative w-full md:w-1/2 mb-10 lg:mb-0">
-                    <div className="p-4 bg-gradient-to-br from-purple-800 via-blue-800 to-gray-800 rounded-xl overflow-hidden">
-                        <motion.img
-                            src="https://www.shutterstock.com/image-photo/office-conference-room-meeting-diverse-260nw-2104484045.jpg"
-                            alt="Team working"
-                            className="w-full h-[400px] object-cover rounded-xl"
-                            initial={{ scale: 0.8, opacity: 0 }}
-                            animate={{ scale: 1, opacity: 1 }}
-                            transition={{ duration: 0.5 }}
-                        />
-                    </div>
-                </div>
-                <div className="lg:w-1/2 lg:pl-10">
-                    <motion.h2
-                        className="text-4xl font-bold text-white mb-6"
-                        initial={{ y: -20, opacity: 0 }}
-                        animate={{ y: 0, opacity: 1 }}
-                        transition={{ duration: 0.5 }}
-                    >
-                        About <span className="text-purple-300 cursor-pointer">Us</span>
-                    </motion.h2>
-                    <motion.p
-                        className="text-gray-200 mb-6"
-                        initial={{ y: -10, opacity: 0 }}
-                        animate={{ y: 0, opacity: 1 }}
-                        transition={{ duration: 0.5, delay: 0.2 }}
-                    >
-                        Micro Sonic Work is a leading technology solutions provider dedicated to helping businesses of all sizes achieve their digital transformation goals. Our team of experts specializes in delivering cutting-edge solutions in Digital Marketing, App Development, Web Designing & Development, Software Development, and Salesforce Development.
-                    </motion.p>
-                    <motion.p
-                        className="text-gray-200 mb-6"
-                        initial={{ y: -10, opacity: 0 }}
-                        animate={{ y: 0, opacity: 1 }}
-                        transition={{ duration: 0.5, delay: 0.4 }}
-                    >
-                        With years of experience and a commitment to innovation, we provide tailored services that drive growth, improve efficiency, and enhance customer experiences. Whether you're a startup looking to establish a digital presence or a large enterprise seeking to optimize operations, we have the expertise to bring your vision to life.
-                    </motion.p>
-                    <motion.p
-                        className="text-gray-200 mb-6"
-                        initial={{ y: -10, opacity: 0 }}
-                        animate={{ y: 0, opacity: 1 }}
-                        transition={{ duration: 0.5, delay: 0.6 }}
-                    >
-                        At Micro Sonic Work, we believe in building long-term partnerships with our clients. We work closely with you to understand your business needs, offering personalized solutions that align with your goals and drive success. Our collaborative approach ensures that we are not just a service provider, but a true partner in your journey.
-                    </motion.p>
-                    <motion.p
-                        className="text-gray-200 mb-6"
-                        initial={{ y: -10, opacity: 0 }}
-                        animate={{ y: 0, opacity: 1 }}
-                        transition={{ duration: 0.5, delay: 0.8 }}
-                    >
-                        Let us help you navigate the digital landscape and unlock new opportunities for growth. Together, we can create strategies that not only enhance your online presence but also streamline your operations and elevate customer engagement.
-                    </motion.p>
-                    <motion.h2
-                        className="text-3xl font-bold text-white mb-6 mt-10"
-                        initial={{ y: -20, opacity: 0 }}
-                        animate={{ y: 0, opacity: 1 }}
-                        transition={{ duration: 0.5 }}
-                    >
-                        Why <span className="text-purple-300 cursor-pointer">Choose Us</span>?
-                    </motion.h2>
-                    <motion.p
-                        className="text-gray-200 mb-6"
-                        initial={{ y: -10, opacity: 0 }}
-                        animate={{ y: 0, opacity: 1 }}
-                        transition={{ duration: 0.5, delay: 0.2 }}
-                    >
-                        Our mission is to empower businesses with innovative technology solutions that are not only effective but also sustainable. We take pride in our ability to adapt to the ever-changing digital world, ensuring that our clients are always ahead of the curve.
-                    </motion.p>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-                        {[
-                            {
-                                icon: '🚀',
-                                title: 'Digital Transformation',
-                                description: 'We help businesses embrace digital tools to enhance their operations and services.',
-                            },
-                            {
-                                icon: '📈',
-                                title: 'Growth Driven',
-                                description: 'Our solutions are designed to drive growth and improve efficiency for all clients.',
-                            },
-                            {
-                                icon: '🤝',
-                                title: 'Partnership Focused',
-                                description: 'We work closely with you to ensure solutions align with your business goals.',
-                            },
-                            {
-                                icon: '🌟',
-                                title: 'Customer Experience',
-                                description: 'We prioritize enhancing customer experiences through innovative strategies.',
-                            },
-                        ].map(({ icon, title, description }, index) => (
-                            <motion.div
-                                key={index}
-                                className="flex items-start bg-white rounded-lg shadow-md p-6 transition-transform transform hover:scale-105"
-                                initial={{ opacity: 0 }}
-                                animate={{ opacity: 1 }}
-                                transition={{ duration: 0.5, delay: index * 0.1 }}
-                            >
-                                <div className="text-blue-600 text-4xl mr-4">{icon}</div>
-                                <div>
-                                    <h3 className="text-xl font-semibold text-gray-900">{title}</h3>
-                                    <p className="text-gray-700">{description}</p>
-                                </div>
-                            </motion.div>
-                        ))}
-                    </div>
-                </div>
-            </div>
+export default function About() {
+  return (
+    <div className="bg-gray-100 min-h-screen pt-16 ">
+      {/* Hero Section */}
+      <header className="bg-blue-600 text-white py-16  ">
+        <div className="container mx-auto px-4 text-center">
+          <h1 className="text-4xl font-bold mb-4 text-white">Welcome to EzTech-Print</h1>
+          <p className="text-lg">
+            Revolutionizing the way you think about printing and design services.
+          </p>
         </div>
-    );
-};
+      </header>
 
-export default About;
+      {/* About Section */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-8 text-[#2563EB]">Our Story</h2>
+          <p className="text-lg leading-relaxed text-gray-700 mb-8">
+            At EzTech-Print, we pride ourselves on delivering innovative, high-quality printing solutions to individuals and businesses alike. 
+            Founded with the vision of combining technology with creativity, we have become a trusted name in the printing industry. Our journey began with a 
+            small team of designers and developers who believed in the power of technology to transform the printing experience. Today, we serve thousands of 
+            clients globally, offering customized printing solutions for every need.
+          </p>
+        </div>
+      </section>
+
+      {/* Mission Section */}
+      <section className="bg-gray-200 py-16 text-black">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-8 text-[#2563EB]">Our Mission</h2>
+          <p className="text-lg leading-relaxed text-gray-700 mb-8">
+            Our mission is to make printing simple, accessible, and affordable for everyone. 
+            Whether you're a small business owner, a student, or a corporate organization, EzTech-Print is here to meet your printing needs with precision and care.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-white p-6 shadow-md rounded-lg">
+              <h3 className="text-xl font-semibold mb-4">Customer-Centric</h3>
+              <p>We prioritize our customers' needs and ensure the highest level of satisfaction in every project we handle.</p>
+            </div>
+            <div className="bg-white p-6 shadow-md rounded-lg">
+              <h3 className="text-xl font-semibold mb-4">Eco-Friendly Solutions</h3>
+              <p>We are committed to using sustainable materials and eco-friendly practices to minimize our environmental impact.</p>
+            </div>
+            <div className="bg-white p-6 shadow-md rounded-lg">
+              <h3 className="text-xl font-semibold mb-4">Innovation-Driven</h3>
+              <p>By leveraging the latest technology, we deliver cutting-edge printing services to our clients.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Services Section */}
+      <section className="py-16">
+        <div className="container mx-auto px-4 text-black">
+          <h2 className="text-3xl font-bold text-center mb-8 text-[#2563EB]">What We Offer</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-white p-6 shadow-md rounded-lg">
+              <h3 className="text-xl font-semibold mb-4">Custom Printing</h3>
+              <p>
+                From business cards to banners, we offer a wide range of customizable printing solutions tailored to your needs.
+              </p>
+            </div>
+            <div className="bg-white p-6 shadow-md rounded-lg">
+              <h3 className="text-xl font-semibold mb-4">Graphic Design</h3>
+              <p>
+                Our talented team of designers can help you create stunning visuals for your brand or personal projects.
+              </p>
+            </div>
+            <div className="bg-white p-6 shadow-md rounded-lg">
+              <h3 className="text-xl font-semibold mb-4">Fast Delivery</h3>
+              <p>
+                We ensure timely delivery without compromising on quality, so your projects are always on schedule.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Call to Action Section */}
+      <section className="bg-blue-600 text-white py-16">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold mb-4">Ready to Get Started?</h2>
+          <p className="text-lg mb-8">
+            Join thousands of satisfied customers who trust EzTech-Print for all their printing and design needs.
+          </p>
+          <button className="bg-white text-blue-600 font-semibold py-2 px-6 rounded shadow hover:bg-gray-100">
+            Contact Us
+          </button>
+        </div>
+      </section>
+    </div>
+  );
+}
