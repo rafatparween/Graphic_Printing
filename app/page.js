@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <Slider/>
-      <Header/>
+      {/* <Header/> */}
       <Support/>
       <DataContent/>
      
