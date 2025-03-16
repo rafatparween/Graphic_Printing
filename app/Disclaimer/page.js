@@ -1,5 +1,3 @@
-// pages/disclaimer.js
-
 import Head from "next/head";
 
 const Disclaimer = () => {

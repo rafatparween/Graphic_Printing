@@ -1,12 +1,14 @@
 "use client";
 
 import Avoid from "../Components/Avoid";
+import Digonode from "../Components/Digonode";
 import FooterSection from "../Components/FooterSection";
 import NextHeader from "../Components/NextHeader";
 import NextNavbar from "../Components/NextNavbar";
 
 import SupportPage from "../Components/SupportPage";
 import Wrapper from "../Components/Wrapper";
+import JivoChat from "../JivoChat";
 import PrinterSetup from "./content/PrinterSetup";
 
 
@@ -29,11 +31,13 @@ function Home() {
       <NextNavbar/>
       <NextHeader/>
       <PrinterSetup/>
+      <Digonode/>
       <SupportPage/>
       <Avoid/>
       
       <Wrapper/>
       {/* <FooterSection/> */}
+      <JivoChat/>
 
 
     </>

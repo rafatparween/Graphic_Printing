@@ -348,7 +348,7 @@ function Printersearch() {
           {/* Left Icon */}
           <div className="flex-shrink-0">
             <Image
-              src="/hpsmaart.png" // Replace with your actual path
+              src="/printer.webp" // Replace with your actual path
               alt="HP Smart"
               width={100}
               height={100}
@@ -380,7 +380,7 @@ function Printersearch() {
 
         {/* Bottom Text */}
         <p className="mt-6 text-[#212529] text-[21px] font-bold">
-          Please wait... Driver and software installing
+          Please wait... 
         </p>
       </div>
           </div>

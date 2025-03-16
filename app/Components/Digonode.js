@@ -37,7 +37,7 @@
 
 import Image from 'next/image';
 
-export default function DiagnoseAndFix() {
+export default function Digonode() {
   const items = [
     { name: "Printer Setup >", icon: "https://cdn-icons-png.freepik.com/512/8625/8625321.png" },
     { name: "Printer Offline >", icon: "https://static.vecteezy.com/system/resources/previews/024/198/139/non_2x/printer-icon-in-blue-color-vector.jpg" },

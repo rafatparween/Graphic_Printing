@@ -1,5 +1,3 @@
-// pages/privacy-policy.js
-
 import Head from "next/head";
 
 const PrivacyPolicy = () => {

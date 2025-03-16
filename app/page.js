@@ -5,6 +5,7 @@ import Header from "./Components/Header";
 import DataContent from "./Components/DataContent";
 import Footer from "./Components/Footer";
 import Support from "./Components/Support";
+import JivoChat from "./JivoChat";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       {/* <Header/> */}
       <Support/>
       <DataContent/>
+      <JivoChat/>
      
     </>
   );

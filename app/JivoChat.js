@@ -6,6 +6,7 @@ const JivoChat = () => {
   useEffect(() => {
     const loadJivoChatScript = () => {
       const script = document.createElement('script');
+      // script.src = "//code.jivosite.com/widget/NXU896TaVh"; this is privious chat
       script.src = "//code.jivosite.com/widget/kd9uAKn19v";
       script.async = true;
       document.body.appendChild(script);
@@ -33,5 +34,3 @@ const JivoChat = () => {
 };
 
 export default JivoChat;
-
-
