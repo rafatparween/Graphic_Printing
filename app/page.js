@@ -9,6 +9,7 @@ import Support from "./Components/Support";
 export default function Home() {
   return (
     <>
+      <Navbar/>
       <Slider/>
       {/* <Header/> */}
       <Support/>
