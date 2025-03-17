@@ -112,7 +112,7 @@ export default function PrinterSetup() {
   const router = useRouter(); 
 
   const handleSetupClick = () => {
-    router.push('../services/Pages'); // Ensure the path is correct
+    router.push('../service/Pages'); // Ensure the path is correct
   };
 
   return (
