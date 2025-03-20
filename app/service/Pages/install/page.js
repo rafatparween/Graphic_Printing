@@ -259,7 +259,7 @@ function Printersearch() {
           <Image
             src="/error.png"  // Make sure error.png exists in your public folder
             alt="Printer Error"
-            width={694}
+            width={830}
             height={715}
           />
         </div>
@@ -297,7 +297,7 @@ function Printersearch() {
                 <div className="flex items-center space-x-3">
                   <span className="text-[34px] w-[50px] h-[40px] mt-[-26px]">2.</span>
                   <p className="text-[34px] whitespace-nowrap 2xl:ml-[5px] 2xl:mt-[9px] mb-[23px]">
-                    Click Install Setup to complete your printer setup
+                    Click Install Setup to complete your Start Printer Installation
                   </p>
                 </div>
                 <button

@@ -14,12 +14,12 @@ const Chatlink = () => {
     >
       <div className="relative flex items-center">
   {/* Call Icon Image */}
-  <img src="/bluecall.png" alt="Call Icon" className="w-6 h-6 sm:w-8 sm:h-8 mr-2" />
+  {/* <img src="/bluecall.png" alt="Call Icon" className="w-6 h-6 sm:w-8 sm:h-8 mr-2" /> */}
 
   {/* Text */}
-  <span className="text-[20px] sm:text-[24px] text-[#1c85c1]">
+  {/* <span className="text-[20px] sm:text-[24px] text-[#1c85c1]">
     Call us for printer support
-  </span>
+  </span> */}
 
   {/* Animated Bottom Line */}
   <div
@@ -52,7 +52,7 @@ const NextNavbar = () => {
         <div className="flex items-center space-x-2">
           <img src="/call.png" alt="Call Icon" className="w-6 h-6 sm:w-8 sm:h-8" />
           <span className="text-[20px] sm:text-[24px] text-[#1c85c1]">
-            Chat us for printer support
+            Chat us for Printer Support
           </span>
         </div>
 
