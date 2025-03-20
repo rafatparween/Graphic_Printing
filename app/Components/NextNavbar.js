@@ -1,59 +1,3 @@
-
-
-
-
-// import Link from 'next/link';
-// import React, { useState } from 'react';
-// import Image from 'next/image';
-
-// const Chatlink = () => {
-//   const [hover, setHover] = useState(false);
-
-//   return (
-//     <div
-//       className="chat-now text-2xl text-[#1c85c1] cursor-pointer relative inline-block"
-//       onMouseEnter={() => setHover(true)}
-//       onMouseLeave={() => setHover(false)}
-//     >
-//       <i className="fas fa-phone-square-alt mr-2" aria-hidden="true"></i>
-//       <span className="text-[24px]">Chat Now</span>
-//       <div
-//         className={`absolute bottom-[-5px] right-0 h-[4px] bg-[#1c85c1] transition-all duration-300 ease-in-out ${
-//           hover ? 'w-full' : 'w-0'
-//         }`}
-//       ></div>
-//     </div>
-//   );
-// };
-
-// const Navbar = () => {
-//   return (
-//     <nav className="bg-white w-full">
-//       <div className="max-w-[88%] mx-auto flex items-center justify-between py-4">
-//         {/* Logo on the left */}
-//         <Link legacyBehavior href="/" passHref>
-//           <a className="flex items-center">
-//             <Image
-//               src="/hplogo.png"
-//               alt="HP Logo"
-//               width={53}
-//               height={53}
-//               className="w-auto h-auto"
-//             />
-//           </a>
-//         </Link>
-
-//         {/* Chatlink on the right */}
-//         <Chatlink />
-//       </div>
-//     </nav>
-//   );
-// };
-
-// export default Navbar;
-
-
-
 import Link from 'next/link';
 import React, { useState } from 'react';
 import Image from 'next/image';
@@ -68,13 +12,20 @@ const Chatlink = () => {
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
     >
-      <i className="fas fa-phone-square-alt mr-2" aria-hidden="true"></i>
-      <span className="text-[20px] sm:text-[24px]">Call us for printer support</span>
-      <div
-        className={`absolute bottom-[-5px] right-0 h-[4px] bg-[#1c85c1] transition-all duration-300 ease-in-out ${
-          hover ? 'w-full' : 'w-0'
-        }`}
-      ></div>
+      <div className="relative flex items-center">
+  {/* Call Icon Image */}
+  <img src="/bluecall.png" alt="Call Icon" className="w-6 h-6 sm:w-8 sm:h-8 mr-2" />
+
+  {/* Text */}
+  <span className="text-[20px] sm:text-[24px] text-[#1c85c1]">
+    Call us for printer support
+  </span>
+
+  {/* Animated Bottom Line */}
+  <div
+    className={`absolute bottom-[-5px] right-0 h-[4px] bg-[#1c85c1] transition-all duration-300 ease-in-out ${hover ? 'w-full' : 'w-0'}`}
+  ></div>
+</div>
     </div>
   );
 };
@@ -85,7 +36,7 @@ const NextNavbar = () => {
   return (
     <nav className="bg-white w-full">
       <div className="max-w-[90%] xl:max-w-[1280px] mx-auto flex items-center justify-between py-4">
-        
+
         {/* Logo on the left */}
         {/* <Link href="/" passHref legacyBehavior>
           <a className="flex items-center">
@@ -98,7 +49,12 @@ const NextNavbar = () => {
             />
           </a>
         </Link> */}
-         <span className="text-[20px] sm:text-[24px] text-[#1c85c1]">+1 (847) 787 - 6510</span>
+        <div className="flex items-center space-x-2">
+          <img src="/call.png" alt="Call Icon" className="w-6 h-6 sm:w-8 sm:h-8" />
+          <span className="text-[20px] sm:text-[24px] text-[#1c85c1]">
+            Chat us for printer support
+          </span>
+        </div>
 
         {/* Mobile Menu Button */}
         <button
@@ -125,6 +81,7 @@ const NextNavbar = () => {
 };
 
 export default NextNavbar;
+
 
 
 

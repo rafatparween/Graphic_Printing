@@ -229,6 +229,16 @@ function Printersearch() {
     setPopupVisible(true); // Show the popup
   };
 
+  const [dots, setDots] = useState("");
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setDots((prev) => (prev.length < 3 ? prev + "." : ""));
+    }, 500); // Changes every 500ms
+
+    return () => clearInterval(interval);
+  }, []);
+
   useEffect(() => {
     if (isPopupVisible) {
       // Set a timer to show the error page after 15 seconds
@@ -249,8 +259,8 @@ function Printersearch() {
           <Image
             src="/error.png"  // Make sure error.png exists in your public folder
             alt="Printer Error"
-            width={892}
-            height={632}
+            width={694}
+            height={715}
           />
         </div>
       </div>
@@ -287,7 +297,7 @@ function Printersearch() {
                 <div className="flex items-center space-x-3">
                   <span className="text-[34px] w-[50px] h-[40px] mt-[-26px]">2.</span>
                   <p className="text-[34px] whitespace-nowrap 2xl:ml-[5px] 2xl:mt-[9px] mb-[23px]">
-                    Click Install Setup & driver to complete your printer setup
+                    Click Install Setup to complete your printer setup
                   </p>
                 </div>
                 <button
@@ -379,9 +389,9 @@ function Printersearch() {
         </div>
 
         {/* Bottom Text */}
-        <p className="mt-6 text-[#212529] text-[21px] font-bold">
-          Please wait... 
-        </p>
+        <p className="mt-6 text-[#212529] text-[24px] font-bold">
+      Please wait<span className="dot-animation">{dots}</span>
+    </p>
       </div>
           </div>
         </div>
