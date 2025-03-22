@@ -33,9 +33,10 @@ function Home() {
       <PrinterSetup/>
       <Digonode/>
       <SupportPage/>
-      <Avoid/>
+      {/* <Avoid/> */}
       
-      <Wrapper/>
+      {/* <Wrapper/> */}
+      
       {/* <FooterSection/> */}
       <JivoChat/>
 

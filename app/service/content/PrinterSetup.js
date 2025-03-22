@@ -118,13 +118,13 @@ export default function PrinterSetup() {
   return (
     <div className="flex flex-col items-center py-14 space-y-14 mt-[-33px] bg-[#007DBD] mt-[40px]">
       {/* Top Section */}
-      <div className="flex flex-col md:flex-row items-center md:items-start space-y-10 md:space-y-0 md:space-x-12 w-full max-w-7xl p-10 border border-gray-200 rounded-lg shadow-lg bg-white">
+      <div className="flex flex-col md:flex-row items-center md:items-start space-y-10 md:space-y-0 md:space-x-12  max-w-6xl p-10 border border-gray-200 rounded-lg shadow-lg bg-white">
         {/* Image Section */}
         <div className="w-full md:w-1/2">
           <Image
             src="/printergirl.jpeg" // Replace with the actual path to your image
             alt="Printer Setup"
-            width={800} // Increased width
+            width={600} // Increased width
             height={500} // Increased height
             className="rounded-lg object-cover"
           />

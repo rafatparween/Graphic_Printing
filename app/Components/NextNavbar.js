@@ -35,7 +35,7 @@ const NextNavbar = () => {
 
   return (
     <nav className="bg-white w-full">
-      <div className="max-w-[90%] xl:max-w-[1280px] mx-auto flex items-center justify-between py-4">
+      <div className="max-w-[90%] xl:max-w-6xl mx-auto flex items-center justify-between py-4">
 
         {/* Logo on the left */}
         {/* <Link href="/" passHref legacyBehavior>
