@@ -1,7 +1,9 @@
 import React from 'react';
+import Footer from '../Components/Footer';
 
 export default function About() {
   return (
+    <>
     <div className="bg-gray-100 min-h-screen pt-16 ">
       {/* Hero Section */}
       <header className="bg-blue-600 text-white py-16  ">
@@ -91,5 +93,7 @@ export default function About() {
         </div>
       </section>
     </div>
+    <Footer/>
+    </>
   );
 }

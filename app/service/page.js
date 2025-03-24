@@ -2,6 +2,7 @@
 
 import Avoid from "../Components/Avoid";
 import Digonode from "../Components/Digonode";
+import Footer from "../Components/Footer";
 import FooterSection from "../Components/FooterSection";
 import NextHeader from "../Components/NextHeader";
 import NextNavbar from "../Components/NextNavbar";
@@ -38,6 +39,7 @@ function Home() {
       {/* <Wrapper/> */}
       
       {/* <FooterSection/> */}
+      <Footer/>
       <JivoChat/>
 
 

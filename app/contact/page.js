@@ -1,7 +1,10 @@
 'use client';
 
+import Footer from "../Components/Footer";
+
 const Home = () => {
     return (
+        <>
         <div className="bg-white p-10">
             {/* Popular Questions Section */}
             <div className="mb-16">
@@ -65,6 +68,8 @@ const Home = () => {
                 </div>
             </div>
         </div>
+        <Footer/>
+        </>
     );
 };
 

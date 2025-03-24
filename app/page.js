@@ -3,9 +3,10 @@ import Navbar from "./Components/Navbar";
 import Slider from "./Components/Slider";
 import Header from "./Components/Header";
 import DataContent from "./Components/DataContent";
-import Footer from "./Components/Footer";
+
 import Support from "./Components/Support";
 import JivoChat from "./JivoChat";
+import Footer from "./Components/Footer";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       {/* <Header/> */}
       <Support/>
       <DataContent/>
+      <Footer/>
       <JivoChat/>
      
     </>

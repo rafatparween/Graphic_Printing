@@ -1,8 +1,3 @@
-
-
-
-
-
 "use client";
 import Image from 'next/image';
 import { useEffect } from 'react';
@@ -31,8 +26,8 @@ export default function InstallingDriversPage() {
                     <Image
                         src="/hplogo.png"
                         alt="HP Logo"
-                        width={467}
-                        height={635}
+                        width={367}
+                        height={503}
                         
                     />
                 </div>

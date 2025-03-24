@@ -284,6 +284,7 @@ import Popup from '@/app/Components/Popup';
 
 import FooterSection from '@/app/Components/FooterSection';
 import NavbarSection from '@/app/Components/NavbarSection';
+import Footer from '@/app/Components/Footer';
 
 
 function Home() {
@@ -389,7 +390,7 @@ function Home() {
 
               {/* Dropdown for filtered models */}
               {filteredModels.length > 0 && (
-                <ul className="absolute left-0 mt-1 w-full max-w-lg bg-white border border-gray-300 rounded-lg shadow-lg z-10 2xl:ml-[138px] xl:ml-[100px] text-black">
+                <ul className="absolute left-0 mt-1 w-full max-w-lg bg-white border border-gray-300 rounded-lg shadow-lg z-10 2xl:ml-[138px] xl:ml-[93px] text-black">
                   {filteredModels.map((model) => (
                     <li
                       key={model}
@@ -446,6 +447,7 @@ function Home() {
         </div>
       </div>
       <JivoChat/>
+      <Footer/>
 
     </>
   );

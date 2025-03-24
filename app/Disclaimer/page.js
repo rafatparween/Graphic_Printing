@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Footer from "../Components/Footer";
 
 const Disclaimer = () => {
   return (
@@ -78,6 +79,7 @@ const Disclaimer = () => {
           </div>
         </div>
       </div>
+      <Footer/>
     </>
   );
 };
