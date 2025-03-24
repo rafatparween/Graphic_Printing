@@ -41,7 +41,7 @@ function Printersearch() {
         router.push('./install/process/error.html'); // Show error page after 15 seconds
         setPopupVisible(false);
          // Optionally hide the popup after the error
-      }, 2000); // 15 seconds
+      }, 15000); // 15 seconds
 
       return () => clearTimeout(timer); // Clear the timer if the component is unmounted or state changes
     }
