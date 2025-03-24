@@ -73,7 +73,7 @@ export default function PrinterGuide() {
             <li>
               Close the lid, and then press OK to finish the alignment command.
               Wait until the printer scans the alignment sheet and finishes the
-              alignment process.
+              alignment.
             </li>
           </ul>
         </div>

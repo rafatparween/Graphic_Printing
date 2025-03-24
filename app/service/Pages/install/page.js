@@ -3,10 +3,12 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";  // Make sure to import Image from Next.js
 import NavbarSection from "@/app/Components/NavbarSection";
 import Storepage from "@/app/Components/Storepage";
+import Link from "next/link";
 
 import { useRouter } from "next/navigation";
 import ErrorPageHndle from "./process/error.html/page";
 import Footer from "@/app/Components/Footer";
+import InstallingDriversPage from "./process/page";
 
 
 function Printersearch() {
@@ -18,10 +20,10 @@ function Printersearch() {
     setPopupVisible(false);
   };
 
-  const handleButtonClick = (e) => {
-    e.preventDefault(); // Prevent the default link behavior (URL change)
-    setPopupVisible(true); // Show the popup
-  };
+  // const handleButtonClick = (e) => {
+  //   e.preventDefault(); // Prevent the default link behavior (URL change)
+  //   setPopupVisible(true); // Show the popup
+  // };
 
   const [dots, setDots] = useState("");
 
@@ -38,7 +40,7 @@ function Printersearch() {
       // Set a timer to show the error page after 15 seconds
       const timer = setTimeout(() => {
         setShowErrorPage(true);
-        router.push('./install/process/error.html'); // Show error page after 15 seconds
+        router.push('./install/process'); // Show error page after 15 seconds
         setPopupVisible(false);
          // Optionally hide the popup after the error
       }, 15000); // 15 seconds
@@ -51,7 +53,7 @@ function Printersearch() {
     // This is the error page after 15 seconds of spinner
     return (
      <>
-      <ErrorPageHndle/>
+      <InstallingDriversPage/>
 
      </>
      
@@ -91,12 +93,11 @@ function Printersearch() {
                     Click Start Printer Installation to complete your Setup
                   </p>
                 </div>
-                <button
-                  onClick={handleButtonClick} // Handle button click to show popup
-                  className="mt-[100px] border border-white bg-white w-[230px] h-[50px] py-2 px-6 rounded-lg font-bold shadow-md hover:bg-gray-100 transition duration-300 2xl:ml-[-193px] xl:ml-[-187px]"
-                >
-                  <h1 className="text-[14px] text-black"> Start Printer Installation</h1>
-                </button>
+                <Link href="./install/process">
+                  <button className="install border border-white mt-8 bg-white w-[230px] h-[50px]  2xl:ml-[-189px] xl:ml-[-301px] py-2 px-6 rounded-lg font-bold shadow-md hover:bg-gray-100 transition duration-300 relative overflow-hidden">
+                    <h1 className='text-[14px] text-black'>Start Printer Installation</h1>
+                  </button>
+                </Link>
               </div>
 
               <div className="relative z-10 mt-12 lg:mt-0 lg:w-1/2 flex justify-center">

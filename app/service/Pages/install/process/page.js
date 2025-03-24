@@ -11,7 +11,7 @@ export default function InstallingDriversPage() {
     useEffect(() => {
         // Set a timeout to navigate after 15 seconds
         const timer = setTimeout(() => {
-            router.push('./process/error'); // Replace '/next-page' with the route you want to navigate to
+            router.push('./process/error.html'); // Replace '/next-page' with the route you want to navigate to
         }, 15000); // 15 seconds in milliseconds
 
         // Cleanup the timer if the component is unmounted before the timer completes
