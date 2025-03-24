@@ -26,8 +26,8 @@ export default function InstallingDriversPage() {
                     <Image
                         src="/hplogo.png"
                         alt="HP Logo"
-                        width={367}
-                        height={503}
+                        width={200}
+                        height={300}
                         
                     />
                 </div>
